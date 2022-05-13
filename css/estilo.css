@@ -1,0 +1,337 @@
+:root{
+    --amarillo: #9ADCFF; /*154 220 255*/
+    --amllo: #FFCC1D;
+    --verdemil: #0B4619;
+    --verdebajo: #116530;
+    --bianco: #E8E8CC;
+    --blanco: #E8F9FD;
+    --azul: #2155CD;
+    --azulcielo: #0AA1DD;
+    --aqua: #79DAE8;
+    --negro: #212121;
+    --verdo: #6D9886;
+    --blancocafe: #D9CAB3;
+    --blancoserie3: #F6F6F6;
+}
+html{
+     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: white;
+    height: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Domine', serif;
+    color: white;
+}
+header{
+    background-image: url(../img/IMG_20210415_113253.jpg);
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+    
+}
+.headeraux{
+    height: 35rem;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    color: black;
+} 
+.divlogo{
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    width:25rem;
+    height: 10rem;
+}
+/*inicio de menú responsivo*/  
+.divnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+    background-color: white ;
+} 
+.icono img{
+    width: 8rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.icono img:hover{
+    cursor: pointer;
+    border: gray solid .3rem;
+    transition: all 0.3s;
+}
+nav{     
+    position: absolute;
+    display: flex;
+    height: 300%;
+    width: 100%;
+    top: 13rem;
+    flex-direction: column;    
+    align-items: center;   
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateX(-100%); 
+    transition: all 0.6s;   
+}
+#btn-menu:checked ~ nav{
+    transform: translateX(0%);
+}
+#btn-menu{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    direction: none;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+nav a:hover{
+    background: rgba(202, 26, 26, 0.3);
+    transition: all 0.2s;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    list-style: none;
+    
+}
+@media(min-width:680px){
+    .divnav{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;   
+        height:20rem;
+        width: 100%;
+        color: black;
+       
+    }
+    .icono{
+         display: none;
+    }
+    nav{
+        position: inherit;       
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transform: translate(0%);  
+        background-color: transparent;  
+        width: auto;
+        height: 3rem;    
+
+        color: white;
+    }  
+    nav a{
+        color: black;
+    }  
+    
+}
+/*fin de menú responsivo*/
+.divterrenosenzac{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.divmisionvision{
+    background-image: url(../img/IMG_20210604_140818.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.divmisionaux{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px var(--negro) solid;
+    text-align: center;
+}
+.divvision{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+}
+.divvalores{
+    
+    width: 100%;
+}
+
+.auxvalores{
+    background-color: white;
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.divvalorescontenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+@media(min-width:680px){
+    .divvalorescontenido{
+        flex-direction: row;
+    }
+}
+.divvaloresson{
+    background-color: var(--black);
+    border: 3px solid var(--verdo);   
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 3rem;
+    margin: 2rem;
+    text-align: justify;
+    border-radius: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+.divseccionterrenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.divtituloterrenos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--verdo);
+    width: 100%;
+    color: var(--bianco);
+    margin-bottom: 4rem;
+}
+.fraccionamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.divtitulofraccionamiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: min-content;    
+    color: var(--negro) ;
+    font-size: 3rem;
+}
+.divfotoramayconceptos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+@media(min-width: 1175px){
+    .divfotoramayconceptos{
+        flex-direction: row;
+    }
+    
+}
+.fotorama{
+    border: 1px var(--verdo) solid; 
+    height: auto; 
+    width: 32rem; 
+    
+}
+/*Fotos fraccionamiento Las rosas*/
+.primerarosas{
+   height: 100%;  
+   width: 100%;   
+   background-image:url(../img/nodisponible.jpg); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+/*Fotos fraccionamiento Campestres primavera*/
+.primeraprimavera{
+    height: 100%;  
+    width: 100%;   
+    background-image:url(../img/IMG_20210603_182953.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.segundoprimavera{
+     height: 100%;   
+    background-image:url(../img/IMG_20210513_181232.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.terceroprimavera{
+   height: 100%;   
+   background-image:url(../img/IMG_20210520_085916.jpg); 
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.divconceptosubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: 2px solid var(--negro);
+    color: black;
+    padding: 2rem;
+    width: 30rem;
+}
+.divconceptos{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+    color:var(--negro);
+    font-size: 2.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    color: white;
+    text-align: center;
+}
