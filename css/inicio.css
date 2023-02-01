@@ -1,0 +1,117 @@
+:root{
+    --amarillo: #9ADCFF; /*154 220 255*/
+    --amllo: #FFCC1D;
+    --verdemil: #0B4619;
+    --verdebajo: #116530;
+    --bianco: #E8E8CC;
+    --blanco: #E8F9FD;
+    --azul: #2155CD;
+    --azulcielo: #008080;
+    --aqua: #79DAE8;
+    --negro: rgb(0, 0, 0);
+    --verdo: #6D9886;
+    --blancocafe: #D9CAB3;
+    --blancoserie3: #F6F6F6;
+}
+html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+    
+}
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+.header
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+    /*background-image: linear-gradient(to  right, white 72%, rgba(68, 109, 65, 1) );*/       
+}
+.icon
+{
+    margin-right: 2rem;
+}
+.icon img
+{
+    width: 4rem; 
+
+}
+.nav
+{
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.8);
+    display: flex;
+    flex-direction: column;   
+    transform: translateX(-100%);
+    transition: all 0.5s;    
+    z-index: 1;
+    color: var(--blanco);
+}
+#btn-menu:checked ~ .nav
+{
+ transform: translateX(0%);
+}
+#btn-menu
+{
+    display: none;
+}
+.nav a
+{ 
+    text-decoration: none;
+    direction: none;
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2rem;  
+    text-align: center; 
+    width: 100%;    
+}
+.nav a:hover
+{
+    background-color: rgba(0, 128, 128, 0.5);    
+    transition: all 0.5;    
+}
+li
+{
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    width: 100%; 
+}
+
+.logo
+{
+    height: 10rem;    
+}
+@media(min-width:768px)
+{
+    .icon
+    {
+        display:none;
+    }    
+    .nav
+    {
+        transform: translateX(0%);
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        position: relative;
+        top: 0rem;
+        background: none;
+        margin-right: 0.5rem;
+    }    
+    .nav li a
+    {
+        border: 0rem;
+        color: var(--blanco);
+    }
+    .nav a:hover
+    {        
+        background-color: rgba(0, 128, 128, 0.4);
+    }   
+}

@@ -1,0 +1,34 @@
+:root{
+    --amarillo: #9ADCFF; /*154 220 255*/
+    --amllo: #FFCC1D;
+    --verdemil: #0B4619;
+    --verdebajo: #116530;
+    --bianco: #E8E8CC;
+    --blanco: #E8F9FD;
+    --azul: #2155CD;
+    --azulcielo: #0AA1DD;
+    --aqua: #79DAE8;
+    --negro: #000000;
+    --verdo: #6D9886;
+    --blancocafe: #D9CAB3;
+    --blancoserie3: #F6F6F6;
+}
+html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+     
+}
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+/*
+body{  
+    
+    background-image:linear-gradient( var(--blanco), rgba(68, 109, 65, 1)); 
+}*/
+.bajarLuz{
+
+    background-color: var(--negro);
+}
+
+/*Inicio de terrenos*/

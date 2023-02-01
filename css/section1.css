@@ -1,0 +1,104 @@
+:root{
+    --amarillo: #9ADCFF; /*154 220 255*/
+    --amllo: #FFCC1D;
+    --verdemil: #0B4619;
+    --verdebajo: #116530;
+    --bianco: #E8E8CC;
+    --blanco: #E8F9FD;
+    --azul: #2155CD;
+    --azulcielo: #0AA1DD; /*10 161 221*/ 
+    --aqua: #79DAE8;
+    --negro: #000000;
+    --verdo: #6D9886;
+    --blancocafe: #D9CAB3;
+    --blancoserie3: #F6F6F6;
+    --grisobscuro: #17191a;
+    --grismedio: #222526;
+    --grismedioagudo: #292c2e;
+    --grisagudo: #2d3133;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.spSection1{
+    color: var(--blanco);
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valores{
+    display: flex;
+    flex-direction: column;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.1);*/
+}
+.valores h1{
+    color: var(--amllo);
+}
+@media (min-width: 680px){
+    .valores{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.seguridad{    
+    color: rgba(10,161,221, 0.5);
+    background-color:  var(--grisobscuro) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem 1rem;
+}
+.seguridad p{
+    color: var(--blanco);
+}
+.garantia{    
+    color: rgba(10,161,221, 0.5);
+    background-color: var(--grismedio);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem 1rem;
+}
+.garantia p{
+    color: var(--blanco);
+}
+.honestidad{    
+    color: rgba(10,161,221, 0.5);
+    background-color: var(--grismedioagudo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem 1rem;
+}
+.honestidad p{
+    color: var(--blanco);
+}
+.compromiso{    
+    color: rgba(10,161,221, 0.5);
+    background-color: var(--grisagudo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 1rem 1rem;
+}
+.compromiso p{
+    color: var(--blanco);
+}
+.h1{
+    color: var(--negro);
+}
